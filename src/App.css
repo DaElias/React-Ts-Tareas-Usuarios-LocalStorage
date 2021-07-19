@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.margin-top{margin-top: 50px;}
+body{
+  background: #1488CC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.container.login{margin: 50%;}
+.container.background{
+  background: #9ad6f8;  /* fallback for old browsers */
+}
+.container.blog{height: 600px;}
+
+.container label{
+  margin: 10%;
+  width: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.positionRight{
+  position: absolute;
+  right: 5%;
+  top: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btnExit{
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
+
+.btn{
+  height: 50px;
+  width: 60px;
+  background:  #3d46ec;
+  color: #fff;
+  border-radius: 0px 0px 10px 10px;
+  border: solid #1f74c4 1px;
+  transition: .5s;
+}
+.btn:hover{
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 5px solid #1f27c4;
+}
+
+.positionLeft{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+.addPost{
+  margin: 100px 0px 10px 0px ;
+}
+.addPost .btn{
+  margin: 10px  25% 0px 25%;
+}
+
+.headerBlog{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #3d46ec;
+  box-shadow: black 1px 1px 10px ;
+}
+.headerBlog * {margin: 10px 10px 10px 15px; color: #fff;}
+.headerBlog code{font-size: 40px;}
+
+.box{
+  height: 200px;
+  width: 200px;
+  background-color: rebeccapurple;
+  border: black 5px solid;
+  margin: 2px;
+}
+
+
+
+.inputText{
+}
+
+.listPost{
+  overflow-y: scroll;
+  height: 300px;
+  width: 200px;
+} 
