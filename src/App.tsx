@@ -15,11 +15,17 @@ function App() {
     user: "",
     password: ""
   }
+  const postInit=[{
+    id: 121212,
+    titulo: "Hi Word...",
+    texto: 'print("Hi word")',
+    usuario:"user"
+  }];
 
   const [dateUser, setDateUser] = useState<dateUsuarios>(dateUserInit); //<dateUsuarios>
   const [Acces, setAcces] = useState<boolean>(false);
-  const [post, setPost] = useState([{}]);
-
+  const [post, setPost] = useState(postInit);
+ 
 
 
 

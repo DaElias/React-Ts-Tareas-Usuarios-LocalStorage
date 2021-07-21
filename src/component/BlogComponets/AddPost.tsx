@@ -18,6 +18,8 @@ export const AddPost = ({ post, setPost,user }: any) => {
                     usuario:user
                 }
             ]);
+
+           //console.log("Post ",post, " ",post[0]);
             setTitulo("");
             setTexto("");
         }

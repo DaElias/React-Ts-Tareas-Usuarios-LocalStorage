@@ -1,10 +1,11 @@
-import React from 'react'
 import { Contenido } from './Contenido'
 import { AddPost } from './AddPost';
 
+
 export const Post = ({ post, setPost, user }: any) => {
-    //console.log("post2: ", post);
-    console.log(post)
+
+
+    //console.log("post: ", post);
     return (
         <div className="container">
             <AddPost post={post} setPost={setPost} user={user} />
@@ -13,11 +14,17 @@ export const Post = ({ post, setPost, user }: any) => {
                 <h3 className="margin-top">Lista de Notas</h3>
                 <div className="listPost">
                     {post.map((index: any) => {
-                        return index.usuario === user ? <Contenido id={index.id} titulo={index.titulo} texto={index.texto} /> : ""
+                        return index.usuario === user ? <Contenido
+                            id={index.id}
+                            titulo={index.titulo}
+                            texto={index.texto}
+                            post={post}
+                            setPost={setPost}
+                            key={index.id}
+                        /> : ""
                     })}
                 </div>
             </div>
-
         </div>
     )
 }
