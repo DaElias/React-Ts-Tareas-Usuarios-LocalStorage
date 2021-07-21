@@ -21,7 +21,6 @@ export const Contenido = ({ id, titulo, texto, post, setPost }: any) => {
     }
     const handleEditExit = () => {
         setactivateEdit("handleEdit");
-
     }
 
     const handleActualziarDate = (event: any) => {
